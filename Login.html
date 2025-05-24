@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar Sesión / Registrarse</title>
+  <link rel="stylesheet" href="Css/Login.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+  
+  <div class="contenedor">
+<button onclick="window.history.back()" class="btn-atras">← Atrás</button>
+
+<div class="contenedor">
+  <button type="button" class="boton-tema">🌙</button>
+    
+    <!-- FORMULARIO DE INICIO DE SESIÓN -->
+    <div class="caja-formulario inicio-sesion">
+      <form action="#">
+        <h1>Iniciar Sesión</h1>
+        <div class="campo-entrada">
+          <input type="text" placeholder="Usuario" required />
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="campo-entrada">
+          <input type="password" placeholder="Contraseña" required />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+        <div class="enlace-olvido">
+          <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+        <a href="#Index.html"><button type="submit" class="boton">Entrar</button></a>
+        <p>O inicia sesión con redes sociales</p>
+        <div class="iconos-sociales">
+          <a href="#"><i class="bx bxl-google-plus"></i></a>
+          <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+          <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+        </div>
+        <p>¿No tienes una cuenta? <a href="#" id="mostrar-registro">Regístrate</a></p>
+      </form>
+    </div>
+
+    <!-- FORMULARIO DE REGISTRO -->
+    <div class="caja-formulario registro oculto">
+      <form action="#">
+        <h1>Registrarse</h1>
+        <div class="campo-entrada">
+          <input type="text" placeholder="Usuario" required />
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="campo-entrada">
+          <input type="email" placeholder="Correo electrónico" required />
+          <i class="bx bxs-envelope"></i>
+        </div>
+        <div class="campo-entrada">
+          <input type="password" placeholder="Contraseña" required />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+        <button type="submit" class="boton">Registrarse</button>
+        <p>O regístrate con redes sociales</p>
+        <div class="iconos-sociales">
+          <a href="#"><i class="bx bxl-google-plus"></i></a>
+          <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+          <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+        </div>
+        <p>¿Ya tienes una cuenta? <a href="#" id="mostrar-inicio">Inicia sesión</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="JavaScript/Login.js"></script>
+</body>
+</html>

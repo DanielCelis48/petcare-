@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Configuración básica de caracteres y diseño responsivo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la pestaña del navegador -->
+    <title>Petcare+</title>
+
+    <!-- Enlace al archivo CSS principal -->
+    <link rel="stylesheet" href="Css/Style.css">
+
+    <!-- Preconexión para optimizar carga de fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fuente personalizada de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Roboto+Slab:wght@422&display=swap" rel="stylesheet">
+  </head>
+
+  <body id="top">
+    <!-- Carrito flotante oculto por defecto -->
+    <div id="carritoFlotante" class="carrito-flotante">
+      <div class="carrito-contenido">
+        <!-- Botón para cerrar el carrito -->
+        <span class="cerrar-carrito" id="cerrarCarrito">&times;</span>
+        <h2>Tu Carrito</h2>
+        <p>No hay productos en tu carrito.</p>
+        <!-- Aquí se podrán cargar dinámicamente los productos del carrito -->
+      </div>
+    </div>
+
+    <!-- Menú principal de navegación -->
+    <nav class="menu" id="form-inicio">
+      <!-- Logo de la marca -->
+      <img id="Logo" src="Multimedia/Imajenes/Logo-1.webp">
+
+      <!-- Botón hamburguesa para dispositivos móviles -->
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+
+      <!-- Lista de elementos del menú -->
+      <ul id="menu-list">
+        <li id="BlockMenu1"><a href="#">Home</a></li>
+        <li id="BlockMenu2"><a href="Agendar.html">Agenda</a></li>
+        <li id="BlockMenu3"><a href="Tienda.html">Tienda</a></li>
+        <li id="BlockMenu4">
+          <a href="#">
+            <!-- Icono del carrito de compras -->
+            <img src="Multimedia/Imajenes/Carrito de compras.webp" id="CarritoImg">
+          </a>
+        </li>
+        <li id="BlockMenu5"><a href="Login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <!-- Imagen del banner principal -->
+    <div id="Banerimg">
+      <img src="Multimedia/Imajenes/Baner1.webp" id="Baner">
+    </div>
+
+    <!-- Segunda barra de navegación con contenido de presentación -->
+    <nav class="Navegacion2">
+      <!-- Contenedor de texto de bienvenida e información -->
+      <div id="CajaDeTexto">
+        <h1>Conoce más sobre nosotros</h1>
+        <p>
+          Ofrecemos una red de clínicas veterinarias y productos para el cuidade de tu compañero peludo. Agenda consultas, encuentra servicios cercanos y compra lo mejor para ellos.
+        </p>
+        <!-- Botón para abrir el modal informativo -->
+        <button type="submit" id="btnLeerMas">Leer más...</button>
+
+        <!-- Modal informativo (oculto por defecto) -->
+        <div id="modal" class="modal">
+          <div class="modal-contenido">
+            <!-- Botón para cerrar el modal -->
+            <span class="cerrar" id="cerrarModal">&times;</span>
+            <h2>Sobre PetCare+</h2>
+            <p>
+              PetCare+ es una red veterinaria moderna que conecta clínicas, tiendas de productos para mascotas y servicios profesionales en un solo lugar. Nos dedicamos a mejorar el bienestar de tus mascotas con atención accesible, confiable y cercana.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenedor de imágenes de presentación -->
+      <div class="ContenedorImagenes">
+        <div class="SubImagen">
+          <img src="Multimedia/Imajenes/Perro-Baño-1.webp">
+        </div>
+        <div class="SubImagen">
+          <img src="Multimedia/Imajenes/Perro-Baño-2.webp">
+        </div>
+        <div class="SubImagen">
+          <img src="Multimedia/Imajenes/Perro-Baño-3.webp">
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección descriptiva sobre la plataforma PetCare+ -->
+    <section class="seccion-descriptiva">
+      <div class="contenedor-texto">
+        <h2>Bienvenido a PetCare+</h2>
+        <p>
+          PetCare+ es una plataforma digital que reúne a múltiples clínicas veterinarias en una sola web, diseñada para facilitar el cuidado de tus mascotas. Nos aliamos con una red de profesionales y sedes veterinarias de confianza en distintas ciudades del país para que puedas acceder a servicios de salud animal de manera rápida, segura y desde cualquier lugar.
+        </p>
+        <p>
+          Nuestro objetivo es brindarte una experiencia centralizada donde no solo puedas <strong>agendar citas</strong> en cuestión de minutos, sino también <strong>consultar productos disponibles</strong> por sede, ver la ubicación exacta de las clínicas en el mapa, y contactar fácilmente con cada una de ellas por WhatsApp o correo electrónico.
+        </p>
+        <p>
+          En PetCare+ creemos que todas las mascotas merecen atención oportuna y de calidad. Por eso ofrecemos una interfaz sencilla, adaptable a cualquier dispositivo, con funcionalidades intuitivas que permiten desde una rápida exploración de clínicas veterinarias hasta una reserva confirmada en segundos. Además, buscamos potenciar el crecimiento digital de nuestras clínicas aliadas, ofreciéndoles visibilidad, automatización de procesos y cercanía con sus clientes.
+        </p>
+        <p>
+          Tanto si necesitas una consulta urgente, una revisión de rutina, una vacuna o quieres comprar productos para el bienestar de tu peludo amigo, PetCare+ es tu punto de partida. Descubre un nuevo nivel de atención veterinaria conectada, organizada y siempre a tu alcance.
+        </p>
+        <p><strong>¡Con PetCare+, tu mascota está en buenas manos!</strong></p>
+      </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+      <div class="footer-contenido">
+        <!-- Logo en el pie -->
+        <div class="footer-logo">
+          <img src="Multimedia/Imajenes/Logo-1.webp" alt="Logo PetCare+">
+        </div>
+
+        <!-- Enlaces rápidos -->
+        <div class="footer-links">
+          <a href="#">Inicio</a>
+          <a href="Agendar.html">Agenda</a>
+          <a href="#Tienda.html">Tienda</a>
+          <a href="https://wa.me/573207209035?text">Contacto</a>
+        </div>
+
+        <!-- Información de derechos -->
+        <div class="footer-texto">
+          <p>&copy; 2025 PetCare+ Red Veterinaria. Todos los derechos reservados.</p>
+        </div>
+
+        <!-- Enlace para volver arriba -->
+        <div class="footer-arriba">
+          <a href="#top">↑ Volver arriba</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Archivo JavaScript principal -->
+    <script src="JavaScript/JavaScript.js"></script>
+  </body>
+</html>

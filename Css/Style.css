@@ -1,0 +1,335 @@
+/* ==== REGLAS GENERALES ==== */
+* {                                   /* Aplica a todos los elementos */
+    margin: 0;                        /* Elimina el margen por defecto */
+    padding: 0;                       /* Elimina el padding por defecto */
+    box-sizing: border-box;          /* Incluye el padding y borde dentro del tamaño total */
+}
+
+body {
+    font-family: 'Roboto Slab', serif;  /* Fuente principal del sitio */
+    background-color: #f4f4f4;          /* Color de fondo claro */
+    color: #333;                        /* Color de texto gris oscuro */
+}
+
+a {
+    text-decoration: none;             /* Quita el subrayado de los enlaces */
+    color: inherit;                    /* Hereda el color del texto del elemento padre */
+}
+
+ul {
+    list-style: none;                  /* Quita los puntos o numeración de las listas */
+}
+
+/* ==== MENÚ PRINCIPAL ==== */
+.menu {
+    display: flex;                     /* Usa modelo flexible para organizar los elementos */
+    align-items: center;              /* Alinea verticalmente los elementos */
+    justify-content: space-between;   /* Espacia los elementos entre extremos */
+    background-color: #2c3e50;        /* Fondo azul oscuro */
+    padding: 10px 20px;               /* Espaciado interno horizontal y vertical */
+    flex-wrap: wrap;                  /* Permite que los elementos salten de línea si es necesario */
+}
+
+#Logo {
+    height: 60px;                     /* Altura fija del logo */
+}
+
+.menu ul {
+    display: flex;                    /* Coloca los elementos en línea */
+    align-items: center;             /* Centra los ítems verticalmente */
+    gap: 20px;                        /* Espacio entre los ítems */
+}
+
+.menu ul li a {
+    color: white;                     /* Color blanco para los enlaces */
+    font-weight: bold;               /* Texto en negrita */
+    transition: color 0.3s;          /* Transición suave al cambiar color */
+}
+
+.menu ul li a:hover {
+    color: #1abc9c;                   /* Cambia el color al hacer hover */
+}
+
+#CarritoImg {
+    height: 24px;                     /* Tamaño del ícono de carrito */
+    vertical-align: middle;          /* Alinea verticalmente con el texto */
+}
+
+/* ==== MENÚ HAMBURGUESA ==== */
+.menu-toggle {
+    display: none;                   /* Oculto por defecto (solo se muestra en móvil) */
+    font-size: 32px;                 /* Tamaño grande del ícono */
+    color: white;                    /* Color blanco del ícono */
+    cursor: pointer;                 /* Cursor cambia a mano */
+}
+
+/* ==== BANNER ==== */
+#Banerimg {
+    width: 100%;                     /* Ocupa el 100% del ancho */
+    overflow: hidden;                /* Oculta desbordamientos */
+}
+
+#Baner {
+    width: 100%;                     /* Imagen al 100% del contenedor */
+    height: auto;                    /* Altura automática (mantiene proporción) */
+    transition: opacity 1.5s ease-in-out; /* Transición suave de opacidad */
+}
+
+/* ==== SEGUNDA NAVEGACIÓN ==== */
+.Navegacion2 {
+    padding: 40px 20px;              /* Espaciado interno */
+    display: grid;                   /* Layout en cuadrícula */
+    grid-template-columns: 1fr 1fr;  /* Dos columnas iguales */
+    align-items: center;            /* Centra verticalmente */
+    gap: 20px;                       /* Espacio entre columnas */
+}
+
+#CajaDeTexto {
+    max-width: 400px;               /* Ancho máximo */
+    flex: 1;                         /* Toma espacio disponible */
+    color: #2c3e50;                  /* Color de texto */
+}
+
+#CajaDeTexto h1 {
+    font-size: 2rem;                 /* Tamaño grande del título */
+    font-weight: bold;              /* Negrita */
+    margin-bottom: 15px;            /* Espacio inferior */
+}
+
+#CajaDeTexto p {
+    font-size: 1rem;                 /* Tamaño estándar */
+    margin-bottom: 20px;            /* Espacio inferior */
+    line-height: 1.5;               /* Altura de línea */
+}
+
+#CajaDeTexto button {
+    background-color: #6c8f75;       /* Fondo verde */
+    color: white;                    /* Texto blanco */
+    padding: 12px 24px;              /* Espaciado interno */
+    border: none;                    /* Sin borde */
+    border-radius: 8px;              /* Bordes redondeados */
+    font-size: 1rem;                 /* Tamaño de fuente */
+    cursor: pointer;                 /* Cursor tipo botón */
+}
+
+#CajaDeTexto button:hover {
+    background-color: #5a7d63;       /* Cambio de color al pasar el mouse */
+}
+
+/* ==== CONTENEDOR DE IMÁGENES ==== */
+.ContenedorImagenes {
+    display: flex;                   /* Flexbox para imágenes */
+    flex-wrap: nowrap;              /* No permite que salten de línea */
+    gap: 60px;                       /* Espacio entre imágenes */
+    justify-content: center;        /* Centra horizontalmente */
+    align-items: center;            /* Centra verticalmente */
+    margin-top: 20px;               /* Espacio superior */
+}
+
+.SubImagen {
+    width: 300px;                    /* Ancho fijo */
+    height: 350px;                   /* Alto fijo */
+    overflow: hidden;               /* Oculta exceso de imagen */
+    border: 4px solid #557A89;      /* Borde grueso azul */
+    border-radius: 8px;             /* Bordes redondeados */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);  /* Sombra ligera */
+    background-color: white;        /* Fondo blanco */
+    display: flex;                  /* Flexbox */
+    align-items: center;            /* Centrado vertical */
+    justify-content: center;        /* Centrado horizontal */
+}
+
+.SubImagen:hover {
+    transform: scale(1.1);          /* Aumenta tamaño al pasar mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Más sombra */
+}
+
+.SubImagen img {
+    width: 100%;                    /* Imagen ocupa todo el ancho */
+    height: 100%;                   /* Imagen ocupa toda la altura */
+    object-fit: cover;              /* Ajusta imagen sin deformarse */
+    display: block;                 /* Se muestra como bloque */
+}
+
+/* ==== BOTÓN LEER MÁS ==== */
+#btnLeerMas {
+    background-color: #1abc9c;      /* Fondo verde menta */
+    color: white;                   /* Texto blanco */
+    border: none;                   /* Sin borde */
+    padding: 12px 24px;             /* Espaciado interno */
+    font-size: 1em;                 /* Tamaño estándar */
+    border-radius: 8px;             /* Bordes redondeados */
+    cursor: pointer;                /* Cursor tipo mano */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+#btnLeerMas:hover {
+    background-color: #16a085;      /* Cambia a verde oscuro al hacer hover */
+}
+
+/* ==== MODAL (ventana emergente) ==== */
+.modal {
+    display: none;                  /* Oculta por defecto */
+    position: fixed;                /* Fijado en la pantalla */
+    z-index: 1000;                  /* Nivel superior */
+    left: 0; top: 0;                /* Ocupa toda la pantalla */
+    width: 100%; height: 100%;      /* Tamaño completo */
+    overflow: auto;                 /* Scroll si es necesario */
+    background-color: rgba(0,0,0,0.5); /* Fondo semitransparente */
+}
+
+.modal-contenido {
+    background-color: white;       /* Fondo blanco */
+    margin: 10% auto;              /* Centrado vertical */
+    padding: 20px;                 /* Espaciado interno */
+    border-radius: 10px;           /* Bordes redondeados */
+    width: 90%;                    /* Ancho relativo */
+    max-width: 600px;              /* Ancho máximo */
+    position: relative;            /* Necesario para ubicar el botón cerrar */
+}
+
+.cerrar {
+    color: #aaa;                   /* Color gris claro */
+    position: absolute;            /* Posición absoluta */
+    top: 10px; right: 20px;        /* Ubicado arriba a la derecha */
+    font-size: 28px;               /* Tamaño grande */
+    font-weight: bold;            /* Negrita */
+    cursor: pointer;              /* Cursor tipo mano */
+}
+
+.cerrar:hover {
+    color: #333;                   /* Oscurece al pasar el mouse */
+}
+
+/* ==== SECCIÓN DESCRIPTIVA ==== */
+.seccion-descriptiva {
+    padding: 60px 20px;           /* Espaciado interno */
+    background-color: #ffffff;    /* Fondo blanco */
+    color: #2c3e50;               /* Texto oscuro */
+    text-align: center;           /* Centrado de texto */
+}
+
+.contenedor-texto {
+    max-width: 900px;             /* Ancho máximo del texto */
+    margin: 0 auto;               /* Centrado horizontal */
+    text-align: left;             /* Alineación a la izquierda */
+}
+
+.seccion-descriptiva h2 {
+    font-size: 2.5em;             /* Tamaño grande del título */
+    margin-bottom: 20px;          /* Espacio inferior */
+    text-align: center;           /* Centrado */
+}
+
+.seccion-descriptiva p {
+    font-size: 1.1em;             /* Tamaño moderado */
+    line-height: 1.8;             /* Espaciado entre líneas */
+    margin-bottom: 20px;          /* Separación entre párrafos */
+}
+
+/* ==== FOOTER ==== */
+.footer {
+    background-color: #2c3e50;    /* Fondo oscuro */
+    color: white;                 /* Texto blanco */
+    padding: 40px 20px;           /* Espaciado interno */
+    text-align: center;           /* Centrado de texto */
+}
+
+.footer-logo img {
+    height: 50px;                 /* Tamaño del logo */
+    margin-bottom: 10px;          /* Espacio debajo del logo */
+}
+
+.footer-links {
+    margin: 20px 0;               /* Margen superior e inferior */
+}
+
+.footer-links a {
+    margin: 0 15px;               /* Espacio horizontal entre enlaces */
+    color: white;                 /* Texto blanco */
+    font-weight: bold;           /* Negrita */
+    transition: color 0.3s;       /* Transición suave */
+}
+
+.footer-links a:hover {
+    color: #1abc9c;               /* Cambia a verde menta al pasar el mouse */
+}
+
+.footer-arriba a {
+    color: #1abc9c;               /* Color del enlace "volver arriba" */
+    font-weight: bold;            /* Negrita */
+}
+
+/* ==== CARRITO FLOTANTE ==== */
+.carrito-flotante {
+    position: fixed;              /* Fijo en la pantalla */
+    top: 0; right: -400px;        /* Oculto fuera del área visible */
+    width: 300px;                 /* Ancho del carrito */
+    height: 100%;                 /* Altura completa */
+    background-color: white;     /* Fondo blanco */
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2); /* Sombra lateral */
+    z-index: 1001;                /* Sobre el contenido */
+    transition: right 0.3s ease-in-out; /* Transición suave de entrada */
+}
+
+.carrito-flotante.abierto {
+    right: 0;                     /* Hace visible el carrito */
+}
+
+.carrito-contenido {
+    padding: 20px;                /* Espaciado interno */
+    height: 100%;                 /* Altura completa */
+    overflow-y: auto;             /* Scroll si es necesario */
+    display: flex;                /* Flexbox */
+    flex-direction: column;       /* Elementos en columna */
+}
+
+.cerrar-carrito {
+    font-size: 24px;              /* Tamaño grande del ícono */
+    font-weight: bold;           /* Negrita */
+    color: #333;                  /* Color oscuro */
+    cursor: pointer;             /* Cursor tipo mano */
+    align-self: flex-end;        /* Alineado a la derecha */
+}
+
+/* ==== RESPONSIVE (Pantallas pequeñas) ==== */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;          /* Muestra el ícono hamburguesa */
+    }
+
+    .menu ul {
+        display: none;           /* Oculta lista por defecto */
+        flex-direction: column;  /* Columnas en vertical */
+        width: 100%;             /* Ocupa todo el ancho */
+        background-color: #2c3e50; /* Fondo oscuro */
+        margin-top: 10px;        /* Margen superior */
+    }
+
+    .menu ul.show {
+        display: flex;           /* Muestra menú al activar */
+    }
+
+    .menu ul li {
+        text-align: center;      /* Centra los ítems */
+        line-height: 60px;       /* Altura de cada ítem */
+        border-top: 1px solid #34495e; /* Separador */
+    }
+
+    .Navegacion2 {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+
+    #CajaDeTexto {
+        grid-column: span 1;     /* Ocupa toda la fila */
+    }
+
+    .SubImagen img {
+        width: 100%;             /* Imagen ocupa todo el ancho */
+        margin-top: 10px;        /* Espacio superior */
+    }
+
+    .modal-contenido {
+        margin-top: 30%;         /* Centrado relativo vertical */
+    }
+}

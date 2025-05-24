@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- Define el tipo de documento como HTML5 -->
+<html lang="es">
+<!-- Comienza el documento HTML en idioma español -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Define la codificación de caracteres como UTF-8 -->
+
+  <title>Agendar Cita - PetCare+</title>
+  <!-- Título que aparece en la pestaña del navegador -->
+
+  <link rel="stylesheet" href="Css/Agendar.css">
+  <!-- Enlace al archivo CSS para estilos -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <!-- Fuente externa desde Google Fonts -->
+</head>
+
+<body>
+  <!-- Comienza el contenido visible del cuerpo del sitio -->
+
+  <header class="header">
+    <!-- Encabezado principal con clase "header" -->
+
+    <img src="Multimedia/Imajenes/Logo-1.webp" alt="Logo PetCare+">
+    <!-- Imagen del logo con texto alternativo -->
+
+    <h1>Agendar Cita</h1>
+    <!-- Título principal de la página -->
+  </header>
+
+  <main class="formulario-cita">
+    <!-- Sección principal con clase "formulario-cita" -->
+
+    <div class="botones-extra">
+      <!-- Div para botones adicionales -->
+      <button onclick="window.history.back()">← Atrás</button>
+      <!-- Botón para regresar a la página anterior -->
+    </div>
+
+    <h2>Reserva el mejor cuidado para tu mascota</h2>
+    <!-- Subtítulo o introducción al formulario -->
+
+    <form id="formCita">
+      <!-- Formulario con ID "formCita" -->
+
+      <label for="nombre">Nombre del dueño:</label>
+      <!-- Etiqueta para el campo "nombre" -->
+      <input type="text" id="nombre" name="nombre" required>
+      <!-- Campo de texto obligatorio para el nombre del dueño -->
+
+      <label for="mascota">Nombre de la mascota:</label>
+      <!-- Etiqueta para el campo "mascota" -->
+      <input type="text" id="mascota" name="mascota" required>
+      <!-- Campo de texto obligatorio para el nombre de la mascota -->
+
+      <label for="servicio">Servicio:</label>
+      <!-- Etiqueta para el campo "servicio" -->
+      <select id="servicio" name="servicio" required>
+        <!-- Lista desplegable obligatoria para seleccionar servicio -->
+        <option value="">Selecciona un servicio</option>
+        <!-- Opción por defecto -->
+        <option value="baño">Baño y Spa</option>
+        <option value="consulta">Consulta Veterinaria</option>
+        <option value="vacunacion">Vacunación y Desparasitación</option>
+        <!-- Opciones disponibles para elegir -->
+      </select>
+
+      <label for="fecha">Fecha:</label>
+      <!-- Etiqueta para el campo de fecha -->
+      <input type="date" id="fecha" name="fecha" required>
+      <!-- Campo de selección de fecha obligatorio -->
+
+      <label for="hora">Hora:</label>
+      <!-- Etiqueta para el campo de hora -->
+      <input type="time" id="hora" name="hora" required>
+      <!-- Campo de selección de hora obligatorio -->
+
+      <button type="submit">Agendar</button>
+      <!-- Botón para enviar el formulario -->
+    </form>
+
+    <p id="mensajeConfirmacion" class="mensaje"></p>
+    <!-- Párrafo para mostrar el mensaje de confirmación -->
+  </main>
+
+</body>
+
+<script src="JavaScript/Agendar.js"></script>
+<!-- Enlace al archivo JavaScript que manejará la lógica del formulario -->
+
+</html>
+<!-- Fin del documento HTML -->
